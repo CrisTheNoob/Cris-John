@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Programmer Portfolio</title>
+    <title>Cris John Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @keyframes fade-in {
@@ -24,6 +24,19 @@
         opacity: 1;
         transform: translateY(0);
         }
+
+
+
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .animate-marquee {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite; /* Slightly faster */
+  }
     </style>
 </head>
 <body class="bg-gray-900 text-white pt-20 scroll-smooth">
@@ -38,7 +51,7 @@
         <li><a href="#about" class="hover:text-gray-400 transition">About</a></li>
         <li><a href="#skills" class="hover:text-gray-400 transition">Skills</a></li>
         <li><a href="#projects" class="hover:text-gray-400 transition">Projects</a></li>
-        <li><a href="#contact" class="hover:text-gray-400 transition">Contact</a></li>
+        <li><a href="#testimonial" class="hover:text-gray-400 transition">Testimonial</a></li>
         <li>
             <a href="CrisJohnRamirez.pdf" download
             class="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-4 py-2 rounded-full font-medium hover:scale-105 transform transition duration-300">
@@ -124,6 +137,13 @@
 
     </section>
 
+    <!-- Project Announcement Banner -->
+    <div class="w-full bg-yellow-400 text-gray-900 overflow-hidden py-2">
+    <div class="whitespace-nowrap animate-marquee font-semibold text-center text-sm sm:text-base">
+        🚧 The Projects section is currently being updated. Stay tuned for awesome new features and work! 🚧
+    </div>
+    </div>
+
 
     <!-- Projects Section -->
     <section id="projects" class="py-20 bg-gradient-to-r from-purple-600 to-indigo-700">
@@ -137,10 +157,10 @@
         <!-- Project Card -->
         <div class="relative bg-gray-900 rounded-xl shadow-2xl overflow-hidden group cursor-pointer transform transition duration-300 hover:scale-[1.04] hover:shadow-pink-500/50 border border-transparent hover:border-pink-600">
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent pointer-events-none"></div>
-            <img src="https://via.placeholder.com/600x350?text=Project+1" alt="Project 1" class="w-full h-48 object-cover rounded-t-xl transition-transform duration-500 group-hover:scale-110" />
+            <img src="projects/project1.png" alt="Project 1" class="w-full h-48 object-cover rounded-t-xl transition-transform duration-500 group-hover:scale-110" />
             <div class="p-6 text-left relative z-10">
-            <h3 class="text-2xl font-semibold text-white mb-3">Project 1</h3>
-            <p class="text-gray-300 mb-5">A web application built with React and Node.js to manage tasks efficiently.</p>
+            <h3 class="text-2xl font-semibold text-white mb-3">Post-Checker: A Facebook misinformation detector</h3>
+            <p class="text-gray-300 mb-5">Post-Checker is a Facebook misinformation detector designed to identify and flag misleading or false content shared on the platform. By leveraging natural language processing and fact-checking algorithms, it helps users become more aware of fake news and promotes responsible information sharing.</p>
             <a href="#" class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-pink-600 hover:bg-pink-700 text-white font-medium transition">
                 View Project
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -153,10 +173,10 @@
         <!-- Project Card -->
         <div class="relative bg-gray-900 rounded-xl shadow-2xl overflow-hidden group cursor-pointer transform transition duration-300 hover:scale-[1.04] hover:shadow-pink-500/50 border border-transparent hover:border-pink-600">
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent pointer-events-none"></div>
-            <img src="https://via.placeholder.com/600x350?text=Project+2" alt="Project 2" class="w-full h-48 object-cover rounded-t-xl transition-transform duration-500 group-hover:scale-110" />
+            <img src="projects/itmatched.png" alt="Project 2" class="w-full h-48 object-cover rounded-t-xl transition-transform duration-500 group-hover:scale-110" />
             <div class="p-6 text-left relative z-10">
-            <h3 class="text-2xl font-semibold text-white mb-3">Project 2</h3>
-            <p class="text-gray-300 mb-5">A mobile app built with Flutter that tracks daily activities and fitness goals.</p>
+            <h3 class="text-2xl font-semibold text-white mb-3">IT is Matched</h3>
+            <p class="text-gray-300 mb-5">"It Is Matched" is a web-based system designed to help users find and connect with recommended IT professionals based on their needs. It offers features like chat, rating, and commenting, making it easier to discover and trust professionals in the field.</p>
             <a href="#" class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-pink-600 hover:bg-pink-700 text-white font-medium transition">
                 View Project
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -167,12 +187,206 @@
         </div>
 
         <!-- Project Card -->
+        <div class="relative bg-gray-900 rounded-xl shadow-2xl overflow-hidden group cursor-pointer transform transition duration-300 hover:scale-[1.04] hover:shadow-pink-500/50 border border-transparent hover:border-pink-600">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent pointer-events-none"></div>
+            <img src="projects/bright.png" alt="Project 3" class="w-full h-48 object-cover rounded-t-xl transition-transform duration-500 group-hover:scale-110" />
+            <div class="p-6 text-left relative z-10">
+            <h3 class="text-2xl font-semibold text-white mb-3">Bright Path</h3>
+            <p class="text-gray-300 mb-5">"Bright Path is a web app and mobile game app designed for teachers and students. The web app allows teachers to monitor students' game results and post games, which are then sent to the mobile app for each student to play."</p>
+            <a href="#" class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-pink-600 hover:bg-pink-700 text-white font-medium transition">
+                View Project
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+            </div>
+        </div>
+
+                <!-- Project Card -->
+        <div class="relative bg-gray-900 rounded-xl shadow-2xl overflow-hidden group cursor-pointer transform transition duration-300 hover:scale-[1.04] hover:shadow-pink-500/50 border border-transparent hover:border-pink-600">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent pointer-events-none"></div>
+            <img src="projects/inventory.png" alt="Project 3" class="w-full h-48 object-cover rounded-t-xl transition-transform duration-500 group-hover:scale-110" />
+            <div class="p-6 text-left relative z-10">
+            <h3 class="text-2xl font-semibold text-white mb-3">Inventory System</h3>
+            <p class="text-gray-300 mb-5">"An inventory system that monitors sand and gravel stocks, as well as tracks trucks during deliveries. It uses an automated device that allows the truck driver to input inventory data. Even if the website is offline, the device can still send monitoring data, ensuring continuous tracking and reporting."</p>
+            <a href="#" class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-pink-600 hover:bg-pink-700 text-white font-medium transition">
+                View Project
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+            </div>
+        </div>
+
+
+                <!-- Project Card -->
         <div class="relative bg-gray-900 rounded-xl shadow-2xl overflow-hidden group cursor-pointer transform transition duration-300 hover:scale-[1.04] hover:shadow-pink-500/50 border border-transparent hover:border-pink-600">
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent pointer-events-none"></div>
             <img src="https://via.placeholder.com/600x350?text=Project+3" alt="Project 3" class="w-full h-48 object-cover rounded-t-xl transition-transform duration-500 group-hover:scale-110" />
             <div class="p-6 text-left relative z-10">
-            <h3 class="text-2xl font-semibold text-white mb-3">Project 3</h3>
-            <p class="text-gray-300 mb-5">An e-commerce platform built with Django and integrated with Stripe for payments.</p>
+            <h3 class="text-2xl font-semibold text-white mb-3">Water Level Monitoring System</h3>
+            <p class="text-gray-300 mb-5">"Water Level Monitoring System – A system that detects the water level from the riverside using three levels: Normal, Moderate, and Hazardous. It sends alerts to residents when levels reach Moderate or Hazardous. The system also includes a web application that allows the MDRRMO to monitor real-time water levels and manage the list of registered residents who will receive the alerts."</p>
+            <a href="#" class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-pink-600 hover:bg-pink-700 text-white font-medium transition">
+                View Project
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+            </div>
+        </div>
+
+                <!-- Project Card -->
+        <div class="relative bg-gray-900 rounded-xl shadow-2xl overflow-hidden group cursor-pointer transform transition duration-300 hover:scale-[1.04] hover:shadow-pink-500/50 border border-transparent hover:border-pink-600">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent pointer-events-none"></div>
+            <img src="https://via.placeholder.com/600x350?text=Project+3" alt="Project 3" class="w-full h-48 object-cover rounded-t-xl transition-transform duration-500 group-hover:scale-110" />
+            <div class="p-6 text-left relative z-10">
+            <h3 class="text-2xl font-semibold text-white mb-3">RFID Attendance with Balance Checker</h3>
+            <p class="text-gray-300 mb-5">"RFID Attendance with Balance Checker – A system where students tap their RFID cards to record attendance automatically. The system includes a web application with a student management system and a balance notifier. Parents receive real-time notifications when their child enters or leaves the school, along with updates about their child's account balance and examination fees."</p>
+            <a href="#" class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-pink-600 hover:bg-pink-700 text-white font-medium transition">
+                View Project
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+            </div>
+        </div>
+
+                <!-- Project Card -->
+        <div class="relative bg-gray-900 rounded-xl shadow-2xl overflow-hidden group cursor-pointer transform transition duration-300 hover:scale-[1.04] hover:shadow-pink-500/50 border border-transparent hover:border-pink-600">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent pointer-events-none"></div>
+            <img src="https://via.placeholder.com/600x350?text=Project+3" alt="Project 3" class="w-full h-48 object-cover rounded-t-xl transition-transform duration-500 group-hover:scale-110" />
+            <div class="p-6 text-left relative z-10">
+            <h3 class="text-2xl font-semibold text-white mb-3">Nudity Camera App X Blur Effect</h3>
+            <p class="text-gray-300 mb-5">"Nudity Camera App X Blur Effect – A mobile application that uses AI to detect visible private parts of the body when capturing a photo. If any nudity is detected, the app automatically applies a blur effect to the private areas before saving the image to the gallery, ensuring privacy and appropriate content handling."</p>
+            <a href="#" class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-pink-600 hover:bg-pink-700 text-white font-medium transition">
+                View Project
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+            </div>
+        </div>
+
+                <!-- Project Card -->
+        <div class="relative bg-gray-900 rounded-xl shadow-2xl overflow-hidden group cursor-pointer transform transition duration-300 hover:scale-[1.04] hover:shadow-pink-500/50 border border-transparent hover:border-pink-600">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent pointer-events-none"></div>
+            <img src="https://via.placeholder.com/600x350?text=Project+3" alt="Project 3" class="w-full h-48 object-cover rounded-t-xl transition-transform duration-500 group-hover:scale-110" />
+            <div class="p-6 text-left relative z-10">
+            <h3 class="text-2xl font-semibold text-white mb-3">Sensor Based parking system with Management system</h3>
+            <p class="text-gray-300 mb-5">"Sensor-Based Parking System with Management System – A system that uses ultrasonic sensors to detect whether a parking slot is available or occupied. It includes a web application that monitors the entire parking area in real-time and displays the status of each parking slot, helping users and administrators manage parking efficiently."</p>
+            <a href="#" class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-pink-600 hover:bg-pink-700 text-white font-medium transition">
+                View Project
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+            </div>
+        </div>
+
+
+                <!-- Project Card -->
+        <div class="relative bg-gray-900 rounded-xl shadow-2xl overflow-hidden group cursor-pointer transform transition duration-300 hover:scale-[1.04] hover:shadow-pink-500/50 border border-transparent hover:border-pink-600">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent pointer-events-none"></div>
+            <img src="https://via.placeholder.com/600x350?text=Project+3" alt="Project 3" class="w-full h-48 object-cover rounded-t-xl transition-transform duration-500 group-hover:scale-110" />
+            <div class="p-6 text-left relative z-10">
+            <h3 class="text-2xl font-semibold text-white mb-3">Query Assistance Management System</h3>
+            <p class="text-gray-300 mb-5">"Query Assistance Management System – A system that uses voice recognition to allow citizens to speak their needs or concerns when visiting the municipal office. The system responds by providing guidance or directions tailored to their specific queries, helping streamline services and improve public assistance efficiency."</p>
+            <a href="#" class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-pink-600 hover:bg-pink-700 text-white font-medium transition">
+                View Project
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+            </div>
+        </div>
+
+
+                <!-- Project Card -->
+        <div class="relative bg-gray-900 rounded-xl shadow-2xl overflow-hidden group cursor-pointer transform transition duration-300 hover:scale-[1.04] hover:shadow-pink-500/50 border border-transparent hover:border-pink-600">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent pointer-events-none"></div>
+            <img src="https://via.placeholder.com/600x350?text=Project+3" alt="Project 3" class="w-full h-48 object-cover rounded-t-xl transition-transform duration-500 group-hover:scale-110" />
+            <div class="p-6 text-left relative z-10">
+            <h3 class="text-2xl font-semibold text-white mb-3">Cemetery Management System</h3>
+            <p class="text-gray-300 mb-5">"Cemetery Management System – A system that allows easy management and viewing of cemetery plots, enabling users to quickly locate specific graves. It also includes a notification feature to remind owners or relatives about tax payments related to their plots."</p>
+            <a href="#" class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-pink-600 hover:bg-pink-700 text-white font-medium transition">
+                View Project
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+            </div>
+        </div>
+
+                <!-- Project Card -->
+        <div class="relative bg-gray-900 rounded-xl shadow-2xl overflow-hidden group cursor-pointer transform transition duration-300 hover:scale-[1.04] hover:shadow-pink-500/50 border border-transparent hover:border-pink-600">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent pointer-events-none"></div>
+            <img src="https://via.placeholder.com/600x350?text=Project+3" alt="Project 3" class="w-full h-48 object-cover rounded-t-xl transition-transform duration-500 group-hover:scale-110" />
+            <div class="p-6 text-left relative z-10">
+            <h3 class="text-2xl font-semibold text-white mb-3">WiFi Plastic Vending Machine</h3>
+            <p class="text-gray-300 mb-5">"WiFi Plastic Vending Machine – A machine where users insert plastic bottles, which are then weighed and validated. Based on the bottle’s weight or quantity, the machine provides the user with internet access time as a reward."</p>
+            <a href="#" class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-pink-600 hover:bg-pink-700 text-white font-medium transition">
+                View Project
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+            </div>
+        </div>
+
+
+                <!-- Project Card -->
+        <div class="relative bg-gray-900 rounded-xl shadow-2xl overflow-hidden group cursor-pointer transform transition duration-300 hover:scale-[1.04] hover:shadow-pink-500/50 border border-transparent hover:border-pink-600">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent pointer-events-none"></div>
+            <img src="https://via.placeholder.com/600x350?text=Project+3" alt="Project 3" class="w-full h-48 object-cover rounded-t-xl transition-transform duration-500 group-hover:scale-110" />
+            <div class="p-6 text-left relative z-10">
+            <h3 class="text-2xl font-semibold text-white mb-3">Landslide ALert System with web App monitoring system</h3>
+            <p class="text-gray-300 mb-5">Landslide Alert System with Web App Monitoring – A system that detects potential landslide events using sensors and environmental data, sending real-time alerts to residents and authorities. It includes a web application for monitoring conditions, viewing alert history, and managing notifications.</p>
+            <a href="#" class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-pink-600 hover:bg-pink-700 text-white font-medium transition">
+                View Project
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+            </div>
+        </div>
+
+                <!-- Project Card -->
+        <div class="relative bg-gray-900 rounded-xl shadow-2xl overflow-hidden group cursor-pointer transform transition duration-300 hover:scale-[1.04] hover:shadow-pink-500/50 border border-transparent hover:border-pink-600">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent pointer-events-none"></div>
+            <img src="https://via.placeholder.com/600x350?text=Project+3" alt="Project 3" class="w-full h-48 object-cover rounded-t-xl transition-transform duration-500 group-hover:scale-110" />
+            <div class="p-6 text-left relative z-10">
+            <h3 class="text-2xl font-semibold text-white mb-3">Fall Detection with Alert System</h3>
+            <p class="text-gray-300 mb-5">Fall Detection with Alert System – A system that detects when a person experiences a fall or accident. It automatically notifies their guardian or emergency contacts to ensure timely assistance.</p>
+            <a href="#" class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-pink-600 hover:bg-pink-700 text-white font-medium transition">
+                View Project
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+            </div>
+        </div>
+                <!-- Project Card -->
+        <div class="relative bg-gray-900 rounded-xl shadow-2xl overflow-hidden group cursor-pointer transform transition duration-300 hover:scale-[1.04] hover:shadow-pink-500/50 border border-transparent hover:border-pink-600">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent pointer-events-none"></div>
+            <img src="https://via.placeholder.com/600x350?text=Project+3" alt="Project 3" class="w-full h-48 object-cover rounded-t-xl transition-transform duration-500 group-hover:scale-110" />
+            <div class="p-6 text-left relative z-10">
+            <h3 class="text-2xl font-semibold text-white mb-3">Smart Bin with Management System</h3>
+            <p class="text-gray-300 mb-5">Smart Bin with Management System – A system that detects whether a trash bin is full using sensors and controls a locking mechanism. It includes a web application to monitor all registered trash bins in each barangay, providing real-time notifications to trash truck drivers about bins that need to be emptied.</p>
+            <a href="#" class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-pink-600 hover:bg-pink-700 text-white font-medium transition">
+                View Project
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+            </div>
+        </div>
+                <!-- Project Card -->
+        <div class="relative bg-gray-900 rounded-xl shadow-2xl overflow-hidden group cursor-pointer transform transition duration-300 hover:scale-[1.04] hover:shadow-pink-500/50 border border-transparent hover:border-pink-600">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent pointer-events-none"></div>
+            <img src="projects/sprinkler.jpg" alt="Project 3" class="w-full h-48 object-cover rounded-t-xl transition-transform duration-500 group-hover:scale-110" />
+            <div class="p-6 text-left relative z-10">
+            <h3 class="text-2xl font-semibold text-white mb-3">Water Sprinkler</h3>
+            <p class="text-gray-300 mb-5">Automated Water Sprinkler System – A system that automatically waters plants when the temperature reaches 30°C. It also includes a mobile app that allows users to manually turn the sprinkler on or off anytime.</p>
             <a href="#" class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-pink-600 hover:bg-pink-700 text-white font-medium transition">
                 View Project
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -184,6 +398,13 @@
         </div>
     </div>
     </section>
+
+        <!-- Project Announcement Banner -->
+    <div class="w-full bg-yellow-400 text-gray-900 overflow-hidden py-2">
+    <div class="whitespace-nowrap animate-marquee font-semibold text-center text-sm sm:text-base">
+        🚧 The Projects section is currently being updated. Stay tuned for awesome new features and work! 🚧
+    </div>
+    </div>
 
     <!-- Video Section -->
     <section id="video" class="py-20 bg-gradient-to-r from-indigo-700 to-purple-800">
@@ -207,7 +428,7 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section id="testimonials" class="py-20 bg-gray-900">
+    <section id="testimonial" class="py-20 bg-gray-900">
     <div class="container mx-auto px-6 text-center">
         <h2 class="text-4xl font-extrabold text-white mb-12">What Clients Say</h2>
 
@@ -217,37 +438,30 @@
             <div class="flex transition-transform duration-700 ease-in-out" style="transform: translateX(0%)">
             <!-- Testimonial 1 -->
             <div class="w-full flex-shrink-0 px-8 py-12 text-white">
-                <p class="text-lg italic mb-6">“Cris John Ramirez is a talented developer who delivers high-quality work on time. His expertise in full-stack development made our project a success!”</p>
+                <h1 class="text-2xl font-bold mb-4">E-sinsilyo A Loose Vending Machine</h1>
+                <p class="text-lg italic mb-6">“Sir Cris John Ramirez is a talented developer who delivers high-quality work on time. His expertise in full-stack development made our project a success!”</p>
                 <div class="flex items-center justify-center space-x-4">
-                <img src="client1.jpg" alt="Client 1" class="w-14 h-14 rounded-full object-cover border-2 border-pink-600 shadow-md" />
-                <div>
-                    <p class="font-bold text-pink-500">Jessica Parker</p>
-                    <p class="text-gray-400 text-sm">CEO, Tech Innovations</p>
-                </div>
+                    <img src="dynes.webp" alt="Client 1" class="w-14 h-14 rounded-full object-cover border-2 border-pink-600 shadow-md" />
+                    <div>
+                    <p class="font-bold text-pink-500">Dynes Nuñez</p>
+                    <p class="text-gray-400 text-sm">Student</p>
+                    </div>
                 </div>
             </div>
             <!-- Testimonial 2 -->
             <div class="w-full flex-shrink-0 px-8 py-12 text-white">
-                <p class="text-lg italic mb-6">“Working with Cris was a pleasure. His skills in IoT and web development brought our ideas to life seamlessly and efficiently.”</p>
+                <h1 class="text-2xl font-bold mb-4">Post-Checker: A Facebook misinformation detector</h1>
+                <p class="text-lg italic mb-6">“Passionate on his doings and willing to share his knowledge to his colleagues.”</p>
                 <div class="flex items-center justify-center space-x-4">
-                <img src="client2.jpg" alt="Client 2" class="w-14 h-14 rounded-full object-cover border-2 border-pink-600 shadow-md" />
-                <div>
-                    <p class="font-bold text-pink-500">Mark Thompson</p>
-                    <p class="text-gray-400 text-sm">Product Manager, Smart Solutions</p>
-                </div>
+                    <img src="julies.jpg" alt="Client 1" class="w-14 h-14 rounded-full object-cover border-2 border-pink-600 shadow-md" />
+                    <div>
+                    <p class="font-bold text-pink-500">Julius B. Serrano</p>
+                    <p class="text-gray-400 text-sm">colleagues</p>
+                    </div>
                 </div>
             </div>
             <!-- Testimonial 3 -->
-            <div class="w-full flex-shrink-0 px-8 py-12 text-white">
-                <p class="text-lg italic mb-6">“Highly recommend Cris for any software engineering needs. His attention to detail and problem-solving skills are unmatched.”</p>
-                <div class="flex items-center justify-center space-x-4">
-                <img src="client3.jpg" alt="Client 3" class="w-14 h-14 rounded-full object-cover border-2 border-pink-600 shadow-md" />
-                <div>
-                    <p class="font-bold text-pink-500">Anna Lee</p>
-                    <p class="text-gray-400 text-sm">Founder, WebWorks</p>
-                </div>
-                </div>
-            </div>
+            
             </div>
         </div>
 
@@ -319,25 +533,28 @@
                         <li><a href="#about" class="hover:text-white">About</a></li>
                         <li><a href="#skills" class="hover:text-white">Skills</a></li>
                         <li><a href="#projects" class="hover:text-white">Projects</a></li>
-                        <li><a href="#contact" class="hover:text-white">Contact</a></li>
+                        <li><a href="#testimonial" class="hover:text-white">Testimonial</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4 text-white">Technologies</h4>
                     <ul class="space-y-2 text-sm">
-                        <li>JavaScript / TypeScript</li>
-                        <li>React / Vue / Tailwind</li>
-                        <li>Node.js / Python</li>
+                        <li>JavaScript / React JS</li>
+                        <li>Python / Django</li>
+                        <li>PHP / Vanila PHP / Laravel</li>
+                        <li>HTML / CSS / Tailwind CSS</li>
+                        <li>MySQL / PostgreSQL</li>
+                        <li>JAVA / C++</li>
                         <li>AWS / Docker / CI/CD</li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4 text-white">Social</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white">GitHub</a></li>
-                        <li><a href="#" class="hover:text-white">LinkedIn</a></li>
-                        <li><a href="#" class="hover:text-white">Twitter</a></li>
-                        <li><a href="#" class="hover:text-white">Email</a></li>
+                        <li><a href="https://github.com/CrisTheNoob" class="hover:text-white">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/crisjohnramirez091299" class="hover:text-white">LinkedIn</a></li>
+                        <li><a href="https://www.tiktok.com/@maker_tech?is_from_webapp=1&sender_device=pc" class="hover:text-white">TikTok</a></li>
+                        <li><a href="mailto:crisjohnramirez521@gmail.com" class="hover:text-white">Email</a></li>
                     </ul>
                 </div>
             </div>
